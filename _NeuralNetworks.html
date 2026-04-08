@@ -107,60 +107,10 @@ window.Quarto = {
 
 </head>
 
-<body class="quarto-light">
+<body class="fullcontent quarto-light">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul class="collapse">
-  <li><a href="#neural-networks-in-sports-analytics" id="toc-neural-networks-in-sports-analytics" class="nav-link active" data-scroll-target="#neural-networks-in-sports-analytics"><span class="header-section-number">1</span> Neural Networks in Sports Analytics</a>
-  <ul class="collapse">
-  <li><a href="#what-is-a-neural-network" id="toc-what-is-a-neural-network" class="nav-link" data-scroll-target="#what-is-a-neural-network"><span class="header-section-number">1.1</span> What is a Neural Network?</a></li>
-  <li><a href="#why-use-neural-networks" id="toc-why-use-neural-networks" class="nav-link" data-scroll-target="#why-use-neural-networks"><span class="header-section-number">1.2</span> Why Use Neural Networks?</a></li>
-  <li><a href="#todays-goal" id="toc-todays-goal" class="nav-link" data-scroll-target="#todays-goal"><span class="header-section-number">1.3</span> Today’s Goal</a></li>
-  </ul></li>
-  <li><a href="#how-neural-networks-work" id="toc-how-neural-networks-work" class="nav-link" data-scroll-target="#how-neural-networks-work"><span class="header-section-number">2</span> How Neural Networks Work</a>
-  <ul class="collapse">
-  <li><a href="#basic-structure" id="toc-basic-structure" class="nav-link" data-scroll-target="#basic-structure"><span class="header-section-number">2.1</span> Basic Structure</a></li>
-  <li><a href="#flow-of-information" id="toc-flow-of-information" class="nav-link" data-scroll-target="#flow-of-information"><span class="header-section-number">2.2</span> Flow of Information</a></li>
-  <li><a href="#simple-diagram" id="toc-simple-diagram" class="nav-link" data-scroll-target="#simple-diagram"><span class="header-section-number">2.3</span> Simple Diagram</a></li>
-  </ul></li>
-  <li><a href="#what-happens-inside-a-neural-network" id="toc-what-happens-inside-a-neural-network" class="nav-link" data-scroll-target="#what-happens-inside-a-neural-network"><span class="header-section-number">3</span> What Happens Inside a Neural Network?</a>
-  <ul class="collapse">
-  <li><a href="#neurons-nodes" id="toc-neurons-nodes" class="nav-link" data-scroll-target="#neurons-nodes"><span class="header-section-number">3.1</span> Neurons (Nodes)</a></li>
-  <li><a href="#weights-and-bias" id="toc-weights-and-bias" class="nav-link" data-scroll-target="#weights-and-bias"><span class="header-section-number">3.2</span> Weights and Bias</a></li>
-  <li><a href="#activation-function-relu" id="toc-activation-function-relu" class="nav-link" data-scroll-target="#activation-function-relu"><span class="header-section-number">3.3</span> Activation Function (ReLU)</a></li>
-  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters"><span class="header-section-number">3.4</span> Why This Matters</a></li>
-  </ul></li>
-  <li><a href="#other-activation-functions" id="toc-other-activation-functions" class="nav-link" data-scroll-target="#other-activation-functions"><span class="header-section-number">4</span> Other Activation Functions</a>
-  <ul class="collapse">
-  <li><a href="#sigmoid" id="toc-sigmoid" class="nav-link" data-scroll-target="#sigmoid"><span class="header-section-number">4.1</span> Sigmoid</a></li>
-  <li><a href="#tanh-hyperbolic-tangent" id="toc-tanh-hyperbolic-tangent" class="nav-link" data-scroll-target="#tanh-hyperbolic-tangent"><span class="header-section-number">4.2</span> Tanh (Hyperbolic Tangent)</a></li>
-  <li><a href="#key-takeaway" id="toc-key-takeaway" class="nav-link" data-scroll-target="#key-takeaway"><span class="header-section-number">4.3</span> Key Takeaway</a></li>
-  </ul></li>
-  <li><a href="#example-of-a-neural-network-in-sports-statistics" id="toc-example-of-a-neural-network-in-sports-statistics" class="nav-link" data-scroll-target="#example-of-a-neural-network-in-sports-statistics"><span class="header-section-number">5</span> Example of a Neural Network in Sports Statistics</a>
-  <ul class="collapse">
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data"><span class="header-section-number">5.1</span> Data</a></li>
-  <li><a href="#model-structure" id="toc-model-structure" class="nav-link" data-scroll-target="#model-structure"><span class="header-section-number">5.2</span> Model Structure</a></li>
-  <li><a href="#inputs-targets" id="toc-inputs-targets" class="nav-link" data-scroll-target="#inputs-targets"><span class="header-section-number">5.3</span> Inputs &amp; Targets</a></li>
-  <li><a href="#architecture" id="toc-architecture" class="nav-link" data-scroll-target="#architecture"><span class="header-section-number">5.4</span> Architecture</a></li>
-  <li><a href="#why-64-and-32" id="toc-why-64-and-32" class="nav-link" data-scroll-target="#why-64-and-32"><span class="header-section-number">5.5</span> Why 64 and 32?</a></li>
-  <li><a href="#training-the-model" id="toc-training-the-model" class="nav-link" data-scroll-target="#training-the-model"><span class="header-section-number">5.6</span> Training the Model</a></li>
-  <li><a href="#epochs" id="toc-epochs" class="nav-link" data-scroll-target="#epochs"><span class="header-section-number">5.7</span> Epochs</a></li>
-  <li><a href="#key-idea" id="toc-key-idea" class="nav-link" data-scroll-target="#key-idea"><span class="header-section-number">5.8</span> Key Idea</a></li>
-  </ul></li>
-  <li><a href="#results-and-model-performance" id="toc-results-and-model-performance" class="nav-link" data-scroll-target="#results-and-model-performance"><span class="header-section-number">6</span> Results and Model Performance</a>
-  <ul class="collapse">
-  <li><a href="#overall-accuracy" id="toc-overall-accuracy" class="nav-link" data-scroll-target="#overall-accuracy"><span class="header-section-number">6.1</span> Overall Accuracy</a></li>
-  </ul></li>
-  <li><a href="#limitations-of-this-specfic-model" id="toc-limitations-of-this-specfic-model" class="nav-link" data-scroll-target="#limitations-of-this-specfic-model"><span class="header-section-number">7</span> Limitations of This Specfic Model</a></li>
-  <li><a href="#limitations-of-neural-networks-in-general" id="toc-limitations-of-neural-networks-in-general" class="nav-link" data-scroll-target="#limitations-of-neural-networks-in-general"><span class="header-section-number">8</span> Limitations of Neural Networks in General</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">9</span> Further Reading</a></li>
-  </ul>
-</nav>
-</div>
+
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -188,18 +138,18 @@ window.Quarto = {
 </header>
 
 
-<section id="neural-networks-in-sports-analytics" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Neural Networks in Sports Analytics</h1>
-<section id="what-is-a-neural-network" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="what-is-a-neural-network"><span class="header-section-number">1.1</span> What is a Neural Network?</h2>
+<section id="neural-networks-in-sports-analytics" class="level1">
+<h1>Neural Networks in Sports Analytics</h1>
+<section id="what-is-a-neural-network" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-neural-network">What is a Neural Network?</h2>
 <ul>
 <li>A neural network is a statistically trained model that draws inspiration from the human brain</li>
 <li>In learns from data in order to make predictions</li>
 <li>It is not explicitly programmed, the key here is that it <strong>learns</strong></li>
 </ul>
 </section>
-<section id="why-use-neural-networks" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="why-use-neural-networks"><span class="header-section-number">1.2</span> Why Use Neural Networks?</h2>
+<section id="why-use-neural-networks" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-neural-networks">Why Use Neural Networks?</h2>
 <ul>
 <li>Able to see <strong>complex relationships</strong> in data
 <ul>
@@ -213,8 +163,8 @@ window.Quarto = {
 </ul></li>
 </ul>
 </section>
-<section id="todays-goal" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="todays-goal"><span class="header-section-number">1.3</span> Today’s Goal</h2>
+<section id="todays-goal" class="level2">
+<h2 class="anchored" data-anchor-id="todays-goal">Today’s Goal</h2>
 <ul>
 <li>Build a simple neural network to predict NBA player performance. We will predict:
 <ul>
@@ -224,10 +174,10 @@ window.Quarto = {
 </ul>
 </section>
 </section>
-<section id="how-neural-networks-work" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> How Neural Networks Work</h1>
-<section id="basic-structure" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="basic-structure"><span class="header-section-number">2.1</span> Basic Structure</h2>
+<section id="how-neural-networks-work" class="level1">
+<h1>How Neural Networks Work</h1>
+<section id="basic-structure" class="level2">
+<h2 class="anchored" data-anchor-id="basic-structure">Basic Structure</h2>
 <ul>
 <li>Neural networks are made up of layers of neurons (the human brain has billions of neurons)
 <ul>
@@ -243,16 +193,16 @@ window.Quarto = {
 </ul></li>
 </ul>
 </section>
-<section id="flow-of-information" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="flow-of-information"><span class="header-section-number">2.2</span> Flow of Information</h2>
+<section id="flow-of-information" class="level2">
+<h2 class="anchored" data-anchor-id="flow-of-information">Flow of Information</h2>
 <ul>
 <li><p>Data moves <strong>forward</strong> through the network</p></li>
 <li><p>Each layer transforms the data slightly</p></li>
 <li><p>Final layer produces a prediction</p></li>
 </ul>
 </section>
-<section id="simple-diagram" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="simple-diagram"><span class="header-section-number">2.3</span> Simple Diagram</h2>
+<section id="simple-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="simple-diagram">Simple Diagram</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="simple_diagram.png" class="img-fluid figure-img"></p>
@@ -261,10 +211,10 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="what-happens-inside-a-neural-network" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> What Happens Inside a Neural Network?</h1>
-<section id="neurons-nodes" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="neurons-nodes"><span class="header-section-number">3.1</span> Neurons (Nodes)</h2>
+<section id="what-happens-inside-a-neural-network" class="level1">
+<h1>What Happens Inside a Neural Network?</h1>
+<section id="neurons-nodes" class="level2">
+<h2 class="anchored" data-anchor-id="neurons-nodes">Neurons (Nodes)</h2>
 <ul>
 <li>Each circle in the network is called a <strong>neuron/node</strong></li>
 <li>A neuron:
@@ -275,8 +225,8 @@ window.Quarto = {
 </ul></li>
 </ul>
 </section>
-<section id="weights-and-bias" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="weights-and-bias"><span class="header-section-number">3.2</span> Weights and Bias</h2>
+<section id="weights-and-bias" class="level2">
+<h2 class="anchored" data-anchor-id="weights-and-bias">Weights and Bias</h2>
 <ul>
 <li><strong>Weights</strong>:
 <ul>
@@ -290,8 +240,8 @@ window.Quarto = {
 </ul></li>
 </ul>
 </section>
-<section id="activation-function-relu" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="activation-function-relu"><span class="header-section-number">3.3</span> Activation Function (ReLU)</h2>
+<section id="activation-function-relu" class="level2">
+<h2 class="anchored" data-anchor-id="activation-function-relu">Activation Function (ReLU)</h2>
 <ul>
 <li>After combining inputs, neurons apply an <strong>activation function</strong></li>
 <li>We used <strong>ReLU (Rectified Linear Unit)</strong>:</li>
@@ -313,8 +263,8 @@ f(x) = \max(0, x)
 </figure>
 </div>
 </section>
-<section id="why-this-matters" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="why-this-matters"><span class="header-section-number">3.4</span> Why This Matters</h2>
+<section id="why-this-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters">Why This Matters</h2>
 <ul>
 <li>ReLU helps the model learn <strong>nonlinear patterns</strong></li>
 <li>This is important because:
@@ -324,10 +274,10 @@ f(x) = \max(0, x)
 </ul>
 </section>
 </section>
-<section id="other-activation-functions" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Other Activation Functions</h1>
-<section id="sigmoid" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="sigmoid"><span class="header-section-number">4.1</span> Sigmoid</h2>
+<section id="other-activation-functions" class="level1">
+<h1>Other Activation Functions</h1>
+<section id="sigmoid" class="level2">
+<h2 class="anchored" data-anchor-id="sigmoid">Sigmoid</h2>
 <ul>
 <li>Outputs values between <strong>0 and 1</strong></li>
 <li>Often used for probabilities</li>
@@ -342,8 +292,8 @@ f(x) = \frac{1}{1 + e^{-x}}
 </ul></li>
 </ul>
 </section>
-<section id="tanh-hyperbolic-tangent" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="tanh-hyperbolic-tangent"><span class="header-section-number">4.2</span> Tanh (Hyperbolic Tangent)</h2>
+<section id="tanh-hyperbolic-tangent" class="level2">
+<h2 class="anchored" data-anchor-id="tanh-hyperbolic-tangent">Tanh (Hyperbolic Tangent)</h2>
 <ul>
 <li>Outputs values between <strong>-1 and 1</strong></li>
 <li>Centered at 0 (helps learning compared to sigmoid)</li>
@@ -355,18 +305,18 @@ f(x) = \tanh(x)
 <li>Still can have issues with slow learning in deep networks</li>
 </ul>
 </section>
-<section id="key-takeaway" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="key-takeaway"><span class="header-section-number">4.3</span> Key Takeaway</h2>
+<section id="key-takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="key-takeaway">Key Takeaway</h2>
 <ul>
 <li>Different activation functions change how the model learns patterns</li>
 <li>ReLU is most common, but others are useful in specific situations</li>
 </ul>
 </section>
 </section>
-<section id="example-of-a-neural-network-in-sports-statistics" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Example of a Neural Network in Sports Statistics</h1>
-<section id="data" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="data"><span class="header-section-number">5.1</span> Data</h2>
+<section id="example-of-a-neural-network-in-sports-statistics" class="level1">
+<h1>Example of a Neural Network in Sports Statistics</h1>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
 <ul>
 <li>Using Basketball-Reference.com, I imported these eight stats from players in the NBA since the 2019 season</li>
 <li>Data cleaning: 0 and NA are not the same thing in this context</li>
@@ -375,7 +325,7 @@ f(x) = \tanh(x)
 <summary>
 Click to expand code
 </summary>
-<div id="9324cfdb" class="cell" data-execution_count="2">
+<div id="117bcd8c" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>lebron_df <span class="op">=</span> all_df[all_df[<span class="st">"player"</span>] <span class="op">==</span> <span class="st">"LeBron James"</span>] <span class="op">\</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    .sort_values(<span class="st">"season"</span>)[</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        [<span class="st">"player"</span>,<span class="st">"season"</span>, <span class="st">"age"</span>, <span class="st">"mpg"</span>, <span class="st">"games"</span>, <span class="st">"fga"</span>, <span class="st">"efg"</span>, <span class="st">"pts"</span>, <span class="st">"trb"</span>, <span class="st">"ast"</span>,]</span>
@@ -486,9 +436,10 @@ Click to expand code
 </div>
 </div>
 </div>
-</details></section>
-<section id="model-structure" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="model-structure"><span class="header-section-number">5.2</span> Model Structure</h2>
+</details>
+</section>
+<section id="model-structure" class="level2">
+<h2 class="anchored" data-anchor-id="model-structure">Model Structure</h2>
 <ul>
 <li>Input features:
 <ul>
@@ -503,7 +454,7 @@ Click to expand code
 <summary>
 Click to expand code
 </summary>
-<div id="fc7ae184" class="cell" data-execution_count="3">
+<div id="5e31af7e" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>lebron_df_2 <span class="op">=</span> all_df[all_df[<span class="st">"player"</span>] <span class="op">==</span> <span class="st">"LeBron James"</span>] <span class="op">\</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    .sort_values(<span class="st">"season"</span>)[</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        [<span class="st">"player"</span>, <span class="st">"season"</span>,<span class="st">"prev_age"</span>, <span class="st">"prev_mpg"</span>, <span class="st">"prev_games"</span>, <span class="st">"prev_fga"</span>, <span class="st">"prev_efg"</span>, <span class="st">"prev_pts"</span>, <span class="st">"prev_trb"</span>, <span class="st">"prev_ast"</span>,]</span>
@@ -614,31 +565,16 @@ Click to expand code
 </div>
 </div>
 </div>
-</details></section>
-<section id="inputs-targets" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="inputs-targets"><span class="header-section-number">5.3</span> Inputs &amp; Targets</h2>
+</details>
+</section>
+<section id="inputs-targets" class="level2">
+<h2 class="anchored" data-anchor-id="inputs-targets">Inputs &amp; Targets</h2>
 <ul>
 <li>We started with stats from 2018 - 2024. We dropped the first year, because this year has no ‘previous season’.</li>
 </ul>
-<div id="503dbd09" class="cell" data-execution_count="4">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assigning previous season stats as features / inputs</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> all_df[[</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"prev_age"</span>,</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"prev_games"</span>, </span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"prev_mpg"</span>, </span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"prev_fga"</span>, </span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"prev_efg"</span>, </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"prev_pts"</span>, </span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"prev_trb"</span>, </span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"prev_ast"</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>]]</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Targets: this season's points, rebounds and assists. </span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> all_df[[<span class="st">"pts"</span>,<span class="st">"trb"</span>,<span class="st">"ast"</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 </section>
-<section id="architecture" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="architecture"><span class="header-section-number">5.4</span> Architecture</h2>
+<section id="architecture" class="level2">
+<h2 class="anchored" data-anchor-id="architecture">Architecture</h2>
 <ul>
 <li>Input layer → 8 features</li>
 <li>Hidden Layer 1 → 64 neurons (ReLU)</li>
@@ -652,8 +588,8 @@ Click to expand code
 </figure>
 </div>
 </section>
-<section id="why-64-and-32" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="why-64-and-32"><span class="header-section-number">5.5</span> Why 64 and 32?</h2>
+<section id="why-64-and-32" class="level2">
+<h2 class="anchored" data-anchor-id="why-64-and-32">Why 64 and 32?</h2>
 <ul>
 <li>More neurons = more ability to learn patterns</li>
 <li>First layer (64):
@@ -665,10 +601,9 @@ Click to expand code
 <li>Refines and simplifies those patterns</li>
 </ul></li>
 </ul>
-<p>(insert code)</p>
 </section>
-<section id="training-the-model" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="training-the-model"><span class="header-section-number">5.6</span> Training the Model</h2>
+<section id="training-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="training-the-model">Training the Model</h2>
 <ul>
 <li>The model learns by adjusting:
 <ul>
@@ -680,32 +615,33 @@ Click to expand code
 <summary>
 Click to expand code
 </summary>
-<div id="3309637d" class="cell" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scaling </span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> StandardScaler()</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>X_scaled <span class="op">=</span> scaler.fit_transform(X)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="b09225fc" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scaling </span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>X_scaled <span class="op">=</span> scaler.fit_transform(X)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+</details>
 <ul>
 <li>Random training/testing split, rows are shuffled before splitting so the model sees different players and different seasons</li>
-<li><strong>random_state=42</strong> sets the random seed just saw the data splits the same time every run.</li>
+<li><strong>random_state=42</strong> sets the random seed just so the data splits the same time every run.</li>
 </ul>
-<div id="f73970bf" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Train/test split</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    X_scaled,</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    y,</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    test_size <span class="op">=</span> <span class="fl">0.2</span>,</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    random_state <span class="op">=</span> <span class="dv">42</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X_train.shape)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X_test.shape)</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y_train.shape)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y_test.shape)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="1d5830bc" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Train/test split</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    X_scaled,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    y,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    test_size <span class="op">=</span> <span class="fl">0.2</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    random_state <span class="op">=</span> <span class="dv">42</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X_train.shape)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X_test.shape)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y_train.shape)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y_test.shape)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>(2120, 8)
 (531, 8)
@@ -713,82 +649,53 @@ Click to expand code
 (531, 3)</code></pre>
 </div>
 </div>
-</details></section>
-<section id="epochs" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="epochs"><span class="header-section-number">5.7</span> Epochs</h2>
+</section>
+<section id="epochs" class="level2">
+<h2 class="anchored" data-anchor-id="epochs">Epochs</h2>
 <ul>
-<li><p>Used TensorFlow library which has tools to create, train, and optimize neural networks</p></li>
-<li><p>We trained for 50 <strong>epochs</strong></p>
+<li>Used TensorFlow library which has tools to create, train, and optimize neural networks</li>
+<li>We trained for 50 <strong>epochs</strong>
 <ul>
 <li>Each epoch = one full pass through the training data</li>
 <li>Each epoch looks through the data 32 rows at a time (batch_size)</li>
 </ul></li>
-<li><p><strong>Train Loss</strong> = error on the data the model is learning from (learning)</p></li>
-<li><p><strong>Validation Loss</strong> = error on the data the model has NOT trained on (generalization)</p></li>
+<li><strong>Train Loss</strong> = error on the data the model is learning from (learning)</li>
+<li><strong>Validation Loss</strong> = error on the data the model has NOT trained on (generalization)</li>
+</ul>
+</section>
+<section id="back-propagation" class="level2">
+<h2 class="anchored" data-anchor-id="back-propagation">Back Propagation</h2>
+<ul>
+<li><strong>What to change</strong></li>
+<li>Determines how much each weight contributes to the prediction error<br>
+</li>
+<li>Works <strong>backwards through the network</strong> (output → input)<br>
+</li>
+<li>Computes gradients (how each weight should change)<br>
+</li>
+<li>Happens automatically during <code>model.fit()</code><br>
+</li>
+<li>Provides the information needed to update the weights</li>
+</ul>
+</section>
+<section id="stochastic-gradient-descent" class="level2">
+<h2 class="anchored" data-anchor-id="stochastic-gradient-descent">Stochastic Gradient Descent</h2>
+<ul>
+<li><p><strong>How to change it</strong></p></li>
+<li><p>Uses the gradients from backpropagation to update weights<br>
+</p></li>
+<li><p>Adjusts weights to reduce prediction error<br>
+</p></li>
+<li><p>Runs repeatedly during training<br>
+</p></li>
+<li><p>Uses <strong>small batches of data (32 rows)</strong> instead of all data at once<br>
+</p></li>
+<li><p>The optimizer = “adam” is an advanced form of gradient descent that improves efficiency</p></li>
 <li><p>Mean Squared Error (MSE/Train Loss) as the loss function to train the model, and Mean Absolute Error (MAE) as a metric to interpret how far off our predictions were</p></li>
 </ul>
-<details>
-<summary>
-Click to expand code
-</summary>
-<div id="5af9bc5e" class="cell" data-execution_count="7">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow <span class="im">import</span> keras</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras <span class="im">import</span> layers</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the model</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> keras.Sequential([</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    layers.Dense(<span class="dv">64</span>, activation<span class="op">=</span><span class="st">"relu"</span>, input_shape<span class="op">=</span>(X_train.shape[<span class="dv">1</span>],)),</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    layers.Dense(<span class="dv">32</span>, activation<span class="op">=</span><span class="st">"relu"</span>),</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    layers.Dense(<span class="dv">3</span>)  <span class="co"># 3 outputs: pts, trb, ast</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>])</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Compile the model</span></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">compile</span>(</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    optimizer<span class="op">=</span><span class="st">"adam"</span>,</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    loss<span class="op">=</span><span class="st">"mse"</span>,      <span class="co"># mean squared error</span></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    metrics<span class="op">=</span>[<span class="st">"mae"</span>]  <span class="co"># mean absolute error</span></span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>history <span class="op">=</span> model.fit(</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    X_train,</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    y_train,</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    epochs<span class="op">=</span><span class="dv">50</span>,</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    batch_size<span class="op">=</span><span class="dv">32</span>,</span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    validation_split<span class="op">=</span><span class="fl">0.2</span>,</span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    verbose<span class="op">=</span><span class="dv">0</span></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>plt.plot(history.history[<span class="st">"loss"</span>], label<span class="op">=</span><span class="st">"Train Loss"</span>)</span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>plt.plot(history.history[<span class="st">"val_loss"</span>], label<span class="op">=</span><span class="st">"Validation Loss"</span>)</span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Epoch"</span>)</span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Loss"</span>)</span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Model Training Over Time"</span>)</span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/keras/src/layers/core/dense.py:106: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
-  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
-2026-03-25 12:04:36.718748: I metal_plugin/src/device/metal_device.cc:1154] Metal device set to: Apple M4
-2026-03-25 12:04:36.718774: I metal_plugin/src/device/metal_device.cc:296] systemMemory: 16.00 GB
-2026-03-25 12:04:36.718778: I metal_plugin/src/device/metal_device.cc:313] maxCacheSize: 5.92 GB
-2026-03-25 12:04:36.718791: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:305] Could not identify NUMA node of platform GPU ID 0, defaulting to 0. Your kernel may not have been built with NUMA support.
-2026-03-25 12:04:36.718799: I tensorflow/core/common_runtime/pluggable_device/pluggable_device_factory.cc:271] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 0 MB memory) -&gt; physical PluggableDevice (device: 0, name: METAL, pci bus id: &lt;undefined&gt;)
-2026-03-25 12:04:37.320380: I tensorflow/core/grappler/optimizers/custom_graph_optimizer_registry.cc:117] Plugin optimizer for device_type GPU is enabled.</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="_NeuralNetworks_files/figure-html/cell-8-output-2.png" width="585" height="449" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-</details></section>
-<section id="key-idea" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="key-idea"><span class="header-section-number">5.8</span> Key Idea</h2>
+</section>
+<section id="key-idea" class="level2">
+<h2 class="anchored" data-anchor-id="key-idea">Key Idea</h2>
 <ul>
 <li>The network learns patterns like:
 <ul>
@@ -798,77 +705,62 @@ Click to expand code
 </ul>
 </section>
 </section>
-<section id="results-and-model-performance" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Results and Model Performance</h1>
-<section id="overall-accuracy" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="overall-accuracy"><span class="header-section-number">6.1</span> Overall Accuracy</h2>
+<section id="results-and-model-performance" class="level1">
+<h1>Results and Model Performance</h1>
+<section id="overall-accuracy" class="level2">
+<h2 class="anchored" data-anchor-id="overall-accuracy">Overall Accuracy</h2>
 <ul>
 <li>MAE = [pts error + trb error + ast error] / 3
 <ul>
 <li>The model is off by about 1.4 stats per game on average</li>
 </ul></li>
 </ul>
-<div id="04ab46dd" class="cell" data-execution_count="8">
+<div id="801e5334" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-stdout">
-<pre><code>Model MSE: 5.080
-Model MAE: 1.543
-Model RMSE: 2.2537816375187503</code></pre>
+<pre><code>Model MSE: 6.142
+Model MAE: 1.673
+Model RMSE: 2.4782125950613683</code></pre>
 </div>
 </div>
-<div id="35b2a570" class="cell" data-execution_count="9">
-<div class="cell-output cell-output-stderr">
-<pre><code>/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(</code></pre>
-</div>
+<div id="9dceb8d1" class="cell" data-execution_count="9">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Jaylen Brown
-Predicted -&gt; PTS: 23.98, TRB: 4.13, AST: 3.41
+Predicted -&gt; PTS: 28.80, TRB: 7.11, AST: 1.33
 Actual    -&gt; PTS: 23.00, TRB: 5.50, AST: 3.60
 
 Jayson Tatum
-Predicted -&gt; PTS: 27.16, TRB: 5.60, AST: 4.26
+Predicted -&gt; PTS: 33.17, TRB: 9.32, AST: 1.74
 Actual    -&gt; PTS: 26.90, TRB: 8.10, AST: 4.90
 
-Al Horford
-Predicted -&gt; PTS: 6.78, TRB: 4.14, AST: 2.09
-Actual    -&gt; PTS: 8.60, TRB: 6.40, AST: 2.60
-
 Jrue Holiday
-Predicted -&gt; PTS: 17.13, TRB: 2.49, AST: 6.18
+Predicted -&gt; PTS: 20.88, TRB: 4.83, AST: 4.57
 Actual    -&gt; PTS: 12.50, TRB: 5.40, AST: 4.80
 
-Kristaps Porziņģis
-Predicted -&gt; PTS: 20.21, TRB: 6.02, AST: 2.51
-Actual    -&gt; PTS: 20.10, TRB: 7.20, AST: 2.00
-
 Sam Hauser
-Predicted -&gt; PTS: 7.45, TRB: 3.24, AST: 1.33
+Predicted -&gt; PTS: 7.18, TRB: 3.18, AST: 1.67
 Actual    -&gt; PTS: 9.00, TRB: 3.50, AST: 1.00
 
+Kristaps Porziņģis
+Predicted -&gt; PTS: 23.97, TRB: 8.36, AST: 0.94
+Actual    -&gt; PTS: 20.10, TRB: 7.20, AST: 2.00
+
 Luke Kornet
-Predicted -&gt; PTS: 4.91, TRB: 3.91, AST: 1.20
-Actual    -&gt; PTS: 5.30, TRB: 4.10, AST: 1.10</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(
-/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(
-/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(
-/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(
-/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(
-/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(</code></pre>
+Predicted -&gt; PTS: 3.72, TRB: 3.29, AST: 1.79
+Actual    -&gt; PTS: 5.30, TRB: 4.10, AST: 1.10
+
+Al Horford
+Predicted -&gt; PTS: 7.89, TRB: 4.81, AST: 1.73
+Actual    -&gt; PTS: 8.60, TRB: 6.40, AST: 2.60</code></pre>
 </div>
 </div>
-<div id="f7f34dbf" class="cell" data-fig-height="4" data-fig-width="7" data-execution_count="10">
-<div class="cell-output cell-output-stderr">
-<pre><code>/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(</code></pre>
+<div id="c25782a6" class="cell" data-cache="true" data-fig-height="4" data-fig-width="7" data-execution_count="10">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="_NeuralNetworks_files/figure-html/cell-11-output-1.png" width="585" height="357" class="figure-img"></p>
+</figure>
+</div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
@@ -877,9 +769,12 @@ Actual    -&gt; PTS: 5.30, TRB: 4.10, AST: 1.10</code></pre>
 </figure>
 </div>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(</code></pre>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="_NeuralNetworks_files/figure-html/cell-11-output-3.png" width="585" height="357" class="figure-img"></p>
+</figure>
+</div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
@@ -888,9 +783,12 @@ Actual    -&gt; PTS: 5.30, TRB: 4.10, AST: 1.10</code></pre>
 </figure>
 </div>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(</code></pre>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="_NeuralNetworks_files/figure-html/cell-11-output-5.png" width="585" height="358" class="figure-img"></p>
+</figure>
+</div>
 </div>
 <div class="cell-output cell-output-display">
 <div>
@@ -899,55 +797,18 @@ Actual    -&gt; PTS: 5.30, TRB: 4.10, AST: 1.10</code></pre>
 </figure>
 </div>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(</code></pre>
-</div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="_NeuralNetworks_files/figure-html/cell-11-output-8.png" width="585" height="357" class="figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="_NeuralNetworks_files/figure-html/cell-11-output-10.png" width="585" height="358" class="figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="_NeuralNetworks_files/figure-html/cell-11-output-12.png" width="585" height="357" class="figure-img"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>/Users/vinniecarbone/Documents/3255/Presentation/tfenv/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-  warnings.warn(</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="_NeuralNetworks_files/figure-html/cell-11-output-14.png" width="585" height="357" class="figure-img"></p>
+<p><img src="_NeuralNetworks_files/figure-html/cell-11-output-7.png" width="585" height="357" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 </section>
-<section id="limitations-of-this-specfic-model" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Limitations of This Specfic Model</h1>
+<section id="limitations-of-this-specfic-model" class="level1">
+<h1>Limitations of This Specfic Model</h1>
 <ul>
 <li>Only used basic statistics:
 <ul>
@@ -970,8 +831,8 @@ Actual    -&gt; PTS: 5.30, TRB: 4.10, AST: 1.10</code></pre>
 </ul></li>
 </ul>
 </section>
-<section id="limitations-of-neural-networks-in-general" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Limitations of Neural Networks in General</h1>
+<section id="limitations-of-neural-networks-in-general" class="level1">
+<h1>Limitations of Neural Networks in General</h1>
 <ul>
 <li>Neural networks require <strong>large amounts of data</strong>
 <ul>
@@ -988,12 +849,12 @@ Actual    -&gt; PTS: 5.30, TRB: 4.10, AST: 1.10</code></pre>
 </ul></li>
 </ul>
 </section>
-<section id="further-reading" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Further Reading</h1>
+<section id="further-reading" class="level1">
+<h1>Further Reading</h1>
 <ul>
-<li>[Other applications of neural networks] (https://www.ibm.com/think/topics/neural-networks)</li>
+<li><a href="https://www.ibm.com/think/topics/neural-networks">Other applications of neural networks</a></li>
 <li>https://course.elementsofai.com/en-ie/5/1</li>
-<li>[Creating your own neural network in python] (https://medium.com/<span class="citation" data-cites="soukaina">@soukaina</span>./creating-your-first-neural-network-model-in-python-a-detailed-guide-681ce456b90e)</li>
+<li><a href="https://medium.com/@soukaina./creating-your-first-neural-network-model-in-python-a-detailed-guide-681ce456b90e">Creating your own neural network in python</a></li>
 </ul>
 </section>
 
